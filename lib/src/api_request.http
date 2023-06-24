@@ -1,0 +1,33 @@
+@TOKEN = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1bmlxdWVfbmFtZSI6ImN0eW5ld3Bvc3QiLCJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy93cy8yMDA1LzA1L2lkZW50aXR5L2NsYWltcy9zaWQiOiIyODQwNSIsInJvbGUiOiI0IiwibmJmIjoxNjQzMzU1Njg5LCJleHAiOjE2NDMzNTkyODksImlhdCI6MTY0MzM1NTY4OX0.eznK5ie6IQMxXk8tmzDyUwmWO5cLKWxPFUsOg1iRTew
+@URL = http://apikhn.khanhhoi.net:1434/v1.0
+POST {{URL}}/home
+Content-Type: application/json
+
+{
+    "UserName":"ctynewpost",
+    "_Password":"123456"    
+}
+###
+GET {{URL}}/device/group
+content-type: application/json
+Authorization: Bearer {{TOKEN}}
+###
+GET {{URL}}/device/group?id=925
+content-type: application/json
+Authorization: Bearer {{TOKEN}}
+###
+GET {{URL}}/device/search?id=13181&opt=true
+content-type: application/json
+Authorization: Bearer {{TOKEN}}
+###
+GET {{URL}}/device/search?id=13181
+content-type: application/json
+Authorization: Bearer {{TOKEN}}
+###
+GET {{URL}}/device/search?vhn=51D18267
+content-type: application/json
+Authorization: Bearer {{TOKEN}}
+###
+GET {{URL}}/Device/report/1?deviceid=26107&from=2022-01-27T07:00:08&to=2022-01-27T07:53:08
+content-type: application/json
+Authorization: Bearer {{TOKEN}}
